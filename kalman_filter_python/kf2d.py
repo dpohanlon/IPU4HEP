@@ -181,18 +181,8 @@ def chiSquared(residual, G, C_proj, p_proj, p_filt):
 
 if __name__ == '__main__':
 
-    # nGen = 7
-    # hits, trueTracks = genTracks(nGen = nGen)
-
-    nGen = 1
-
-    hits = [[-0.02062073, -0.12062073],
-            [-0.02062073, -0.22062073],
-            [-0.12062073, -0.42062073],
-            [-0.12062073, -0.52062073],
-            [-0.22062073, -0.62062073],]
-
-    hits = np.array([hits for i in range(nGen)])
+    nGen = 7
+    hits, trueTracks = genTracks(nGen = nGen)
 
     m0 = np.zeros((4, nGen))
     m0[0,:] = hits[:,0,0] # First plane, x hits
