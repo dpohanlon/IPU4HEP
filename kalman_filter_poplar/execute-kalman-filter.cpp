@@ -42,9 +42,9 @@ int main(int argc, char const *argv[]) {
   popops::addCodelets(graph);
   poplin::addCodelets(graph);
   graph.addCodelets("matrixInverseVertex.cpp");
-  graph.addCodelets("matrixProduct.cpp");
-  graph.addCodelets("scaledAdd.cpp");
-  graph.addCodelets("packHits.cpp");
+  graph.addCodelets("matrixProductVertex.cpp");
+  graph.addCodelets("scaledAddVertex.cpp");
+  graph.addCodelets("packHitsVertex.cpp");
 
   int n_inputs = 1;
   int batch_size = 1;
